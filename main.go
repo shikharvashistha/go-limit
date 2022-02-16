@@ -1,6 +1,9 @@
 package main
 
 type GcpApis struct {
-	vm.rateLimiter
-	disk.rateLimiter
+	vm.vmRateLimiter
+	disk.diskRateLimiter
+}
+
+func (g *GcpApis) diskCost() {
 }

@@ -3,7 +3,7 @@ package disk
 import "fmt"
 
 type DiskApi interface {
-	ab() func()
+	ab() func() //respective functions
 	cd() func()
 }
 type Final struct {
@@ -13,7 +13,7 @@ type Final struct {
 
 func (d *Final) ab() func() {
 	return func() {
-		//limit this function
+		//limit this function according to the requirement
 		fmt.Println("disk ab")
 	}
 }

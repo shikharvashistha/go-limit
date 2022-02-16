@@ -11,6 +11,7 @@ type All struct {
 }
 
 func (d *All) limitAll() error {
+	//limit the whole abstraction here
 	return nil
 }
 
